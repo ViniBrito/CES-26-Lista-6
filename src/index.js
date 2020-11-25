@@ -1,6 +1,18 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React, { Component } from 'react';
+import ReactDOM, { render } from 'react-dom';
+import calculator from './reducer';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import Calculator from './Calculator';
+import Header from './Header';
+import './styles.css';
 
-import HelloWorld from './HelloWorld';
+var store = createStore(calculator);
 
-render(<HelloWorld />, document.getElementById('root'));
+render(
+	<Provider store={store}>
+		<Header />
+		<Calculator />
+	</Provider>,
+	document.getElementById('root')
+);

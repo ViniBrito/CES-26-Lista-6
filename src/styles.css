@@ -1,6 +1,6 @@
 button{
-   width: 43px;
-   height: 20px;
+   width: 24.4%;
+   height: 21px;
    background-color: #99a3a4;
    border-radius: 2px;
    outline: none;
@@ -16,11 +16,10 @@ button:active{
 
 #calculator{
    border: 1.5px solid black;
-   width: 13%;
+   width: 15%;
    background-color: lightgrey;
    border-radius: 10px;
    padding: 7px;
-   display:inline-block;
 }
 
 #display{

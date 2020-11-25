@@ -56,7 +56,7 @@ class Calculator extends Component{
 		return(
 			<div id="calculator">
 				<div id="display">
-					{this.props.expr.slice(-18)}
+					{this.props.expr.slice(-21)}
 				</div><br/>
 				<button onClick = {this.props.num1}>1</button>
 				<button onClick = {this.props.num2}>2</button>
@@ -77,7 +77,7 @@ class Calculator extends Component{
 				<button onClick = {this.props.res}>=</button>
 				<button charset="utf-8" onClick = {this.props.del}>⏎</button>
 				<button style={{
-					width: "49.2%",
+					width: "48.5%",
 				}} onClick = {this.props.clr}>Limpar</button>
 			</div>
 		);

@@ -1,5 +1,6 @@
 import { evaluate } from 'mathjs';
 
+// Definindo ações da calculadora para cada chamada de botão
 function calculator(state, action){
 	if(state == undefined) return {expr: ''};
 	var expr = state.expr;

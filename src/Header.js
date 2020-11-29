@@ -6,6 +6,7 @@ import {
 	Link
 } from 'react-router-dom';
 
+// Definindo componente Cabeçalho
 export default function Header(){
   return (
      <div>
